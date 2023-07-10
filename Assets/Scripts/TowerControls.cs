@@ -15,11 +15,14 @@ public class TowerControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rotateTower(); 
+        turnClockwise(); 
     }
 
-    public void rotateTower() {
+    public void turnCounterClockwise() {
         TowerVisual.transform.Rotate(Vector3.forward);
-        //TowerVisual.transform.Rotate(new Vector3(0,0,1));
+    }
+
+    public void turnClockwise() {
+        TowerVisual.transform.Rotate(Vector3.back);
     }
 }
